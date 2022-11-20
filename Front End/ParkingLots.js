@@ -1,3 +1,8 @@
+// Name: Huzaifa Zahid
+// Date Created: 11/16/22
+// Last Editied: 11/17/22
+// Description: This screen shows a condensed list of all the parking lots and will show the permits that will give access to them. The list needs to be updated.
+
 import React, {useState} from 'react'
 import {
   SafeAreaView, StyleSheet, View, FlatList, Text, TouchableOpacity
