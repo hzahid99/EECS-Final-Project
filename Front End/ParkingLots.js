@@ -100,7 +100,7 @@ const App = () => {
   )
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({    //CSS type styling for the buttons on the screen
   separator: {
     height: 0.5,
     width: '100%',
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
 
-  buttonStyle: {
+  buttonStyle: {    //The top and bottom buttons
     position: 'absolute',
     width: 100,
     height: 50,
