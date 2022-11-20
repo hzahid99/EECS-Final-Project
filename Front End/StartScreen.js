@@ -1,3 +1,8 @@
+// Name: Huzaifa Zahid
+// Date Created: 11/16/22
+// Last Editied: 11/17/22
+// Description: This is the start screen that will momentarily appear and then redirect to the settings screen. 
+
 import React from "react"
 import { StyleSheet, Image, Text, View, ImageBackground } from "react-native"
 
