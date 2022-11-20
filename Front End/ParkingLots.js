@@ -52,7 +52,7 @@ const App = () => {
   const ItemView = ({item}) => {
     return (
       <Text style={styles.itemStyle}>
-        {item.id} {'. '} {item.title.toUpperCase()}
+        {item.id} {'. '} {item.title.toUpperCase()}   //Format for the lists, e.g. 1. Lot A
       </Text>
     )
   }
@@ -63,11 +63,11 @@ const App = () => {
     )
   }
 
-  const TopButtonHandler = () => {
+  const TopButtonHandler = () => {  //This button will directly take to the top of the screen
     listViewRef.scrollToOffset({offset: 0, animated: true});
   }
 
-  const EndButtonHandler = () => {
+  const EndButtonHandler = () => {    //This button will directly take to the bottom of the screen
     listViewRef.scrollToEnd({animated: true});
   }
 
