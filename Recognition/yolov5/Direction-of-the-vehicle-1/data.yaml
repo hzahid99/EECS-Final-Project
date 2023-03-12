@@ -1,0 +1,6 @@
+names:
+- back
+- front
+nc: 2
+train: Direction-of-the-vehicle-1/train/images
+val: Direction-of-the-vehicle-1/valid/images
