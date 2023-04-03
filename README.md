@@ -6,4 +6,4 @@
 ### Members: Ahsan, Bikash, Huzaifa, Mir, Rudro 
 
 ![image](https://user-images.githubusercontent.com/61032181/224580438-70963381-5910-4059-9030-e07d3136d601.png)
-![image](https://user-images.githubusercontent.com/61032181/224580502-c0b3b2fa-acb6-43b2-b4bd-fc53926ebed9.png)
+![image](https://res.cloudinary.com/practicaldev/image/fetch/s--QMibzh6w--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/744d0blnoa59y39rii3s.jpeg)
