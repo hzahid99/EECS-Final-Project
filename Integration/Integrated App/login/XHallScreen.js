@@ -1,3 +1,9 @@
+// This code defines a React Native screen component called XHallScreen. 
+// It displays the number of available parking spaces in a parking lot, 
+// which is obtained through a call to a Flask server API. 
+// It also displays the restricted timings for parking in the lot.
+
+//  Importing required modules from React and React Native libraries.
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
@@ -5,10 +11,12 @@ import { StyleSheet, Text, View, Pressable, ImageBackground } from 'react-native
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+//  Define the XHallScreen component which takes the navigation prop from React Navigation.
 const XHallScreen = ({ navigation }) => {
-
+  // Initialize availableSpaces state variable to null using the useState hook.
   const [availableSpaces, setAvailableSpaces] = useState(null);
-
+  
+  // Fetch the total number of parked cars from the Flask server when the component is mounted using the useEffect hook.
   useEffect(() => {
     fetch('http://127.0.0.1:5000/predict') // replace with your Flask server URL
       .then(response => response.json())
@@ -21,7 +29,8 @@ const XHallScreen = ({ navigation }) => {
         console.error(error);
       });
   }, []);
-
+  
+  // Render the UI of the component
   return (
     <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'white' }}>
       <Text style={{ fontWeight: 'bold', fontSize: 39, textAlign: 'center', paddingTop: 30, paddingBottom: 20, marginTop: 20 }}> Wescoe Hall </Text>
