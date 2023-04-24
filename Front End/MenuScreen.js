@@ -1,58 +1,103 @@
 //import * as React from 'react';
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Pressable, useColorScheme } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 
-
+//Menu Screen last edited on 4/23/2023
+//added dark mode for this screen. used conditional statements to implement it
 const MenuScreen = ({navigation}) => {
+  const theme = useColorScheme();
+  const isDarkTheme = theme === 'dark';
   return (
-  <View style = {{flex: 1}}>
-    <Text style = {{fontWeight: 'bold', fontSize: 35, textAlign: 'center', paddingTop: 50}}> PARK KU </Text>
-    <View style = {styles.button}>
-      <Button
-            title="Parking Lots"
-            onPress={() =>
-              navigation.navigate('ParkingLots')
-            }
-          />
-      <Button
-            title="Permits"
-            //style = {{flex: 2 }}
-            onPress={() =>
-              navigation.navigate('Permits')
-            }
-          />
-      <Button
-            title="Explore Lots"
-            //style = {{flex: 1}}
-            onPress={() =>
-              navigation.navigate('ExploreLots')
-            }
-          />
-        <Button
-            title="Settings"
-            //style = {{flex: 1}}
-            onPress={() =>
-              navigation.navigate('Menu')
-            }
-          />
+    
+  <View style = {[{flex: 1, alignItems: 'center', justifyContent: 'space-evenly', backgroundColor: 'white'}, isDarkTheme
+              ? { backgroundColor: 'black' }
+              : { backgroundColor: 'white' }]}>
+    <Text style = {{fontWeight: 'bold', fontSize: 45, textAlign: 'center' }}> PARKKU </Text>
+
+    <View>
+      <Pressable 
+      style = {styles.pressable} 
+          onPress = {() => navigation.navigate('ParkingLots')} 
+          //onPressIn = {fontSize: 25 }
+          android_ripple = {{color: 'green'}}
+          activeOpacity = {0.5}
+        >
+          <Text style = {styles.text}>
+            Parking Lots
+          </Text>
+              
+        </Pressable>
+
+        <Pressable 
+          style = {styles.pressable} 
+          onPress = {() => navigation.navigate('Permits')} 
+          //onPressIn = {fontSize: 25 }
+          android_ripple = {{color: 'green'}}
+          activeOpacity = {0.5}
+        >
+          <Text style = {styles.text}>
+            Permits
+          </Text>
+              
+        </Pressable>
+
+        <Pressable 
+          style = {styles.pressable} 
+          onPress = {() => navigation.navigate('ExploreLots')} 
+          //onPressIn = {fontSize: 25 }
+          android_ripple = {{color: 'green'}}
+          activeOpacity = {0.5}
+        >
+          <Text style = {styles.text}>
+            Explore Lots
+          </Text>
+              
+        </Pressable>
+
+        <Pressable 
+          style = {styles.pressable} 
+          onPress = {() => navigation.navigate('Menu')} 
+          //onPressIn = {fontSize: 25 }
+          android_ripple = {{color: 'green'}}
+          activeOpacity = {0.5}
+        >
+          <Text style = {styles.text}>
+            Settings
+          </Text>
+              
+        </Pressable>
+
     </View>
   </View>
+    //</View>
   )
 };
 
 const styles = StyleSheet.create({
-  button: {
-    //backgroundColor: 'blue',
-    flexDirection: 'column',
+  pressable:
+  {
+    borderRadius: 75,
+    backgroundColor: '#3D75C9',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
-    height: 500
-  }
+    justifyContent: 'center',
+    height: 62,
+    width: 170,
+    margin: 20,   
+  },
+
+  text: 
+  {
+    fontSize: 15,
+    fontFamily: 'Cochin',
+    fontWeight: 'bold',
+  },
+
 });
+
 export default MenuScreen; 
   
 
