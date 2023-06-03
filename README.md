@@ -8,6 +8,6 @@
 
 ### App Pictures
 ![image](https://github.com/hzahid99/EECS-Final-Project/assets/61032181/0076dfdd-6493-4f1a-8f72-0a9eae6e6fd3)
-![image](https://github.com/hzahid99/EECS-Final-Project/assets/61032181/69f4baac-cda2-43fc-8fcb-d1a3636cdf1d)
+![image](https://github.com/hzahid99/EECS-Final-Project/assets/61032181/69f4baac-cda2-43fc-8fcb-d1a3636cdf1d)  
 ![image](https://github.com/hzahid99/EECS-Final-Project/assets/61032181/9e7b8ed5-2170-46fb-945d-81a0e35f4bd0)
 
