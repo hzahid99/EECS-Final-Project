@@ -3,7 +3,7 @@
 
 ### Members: Ahsan, Bikash, Huzaifa, Mir, Rudro
 ### App description: The ParkKU App is a mobile application designed to help students, faculty, and staff members find available parking spots on the KU campus. The app utilizes state-of-the-art computer vision technology, YoloV5 model, to inform the customers on the available number of spaces. The front end of the app is built using React Native, a popular cross-platform mobile development framework. We have built a minimum viable product where we have able to test our application and model using images. This can be taken further and the use of video from the cameras in the parking lots can be integrated.  
-### App demo: https://drive.google.com/file/d/1rvRtkDcGTDyGvHEu4bPZry2QbpQuVvEH/view?usp=sharing
+### App demo: https://youtu.be/t0V-qkeag5I
 ![image](https://user-images.githubusercontent.com/61032181/224580438-70963381-5910-4059-9030-e07d3136d601.png)
 ![image](https://res.cloudinary.com/practicaldev/image/fetch/s--QMibzh6w--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/744d0blnoa59y39rii3s.jpeg)
 
